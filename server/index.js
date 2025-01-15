@@ -2,6 +2,8 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import cookieParser from "cookie-parser";
+import { connectDB } from "./config/db.js";
+import { apiRouter } from "./routes/index.js";
 
 // Configure dot env
 dotenv.config();
